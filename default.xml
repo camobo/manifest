@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-    <manifest>
-      <remote  name="calculadora"
-               fetch="https://github.com/camobo/"/>
-
+<manifest>
+	<!--El siguiente remote sirve para especificar la dirección de un servidor que aloja repositorios. En este caso le llamo Github_Carlos para diferenciarlo y se aloja en https://github.com/camobo/.-->
+	    <remote  name="Github_Carlos"			
+	             fetch="https://github.com/camobo/"/>
+	<!--En default se asignan valores que tomará por defecto. En este caso decimos que por defecto busque en la rama master y en el servidor remoto Github_Carlos. Si no se pusiera habría que especificarlos manualmente en los project-->
       <default revision="master"
-               remote="calculadora" />
+               remote="Github_Carlos" />
 
-      <project path="proyectoUJI" name="ProyectoEI1027" />
+       <!--Cada project es un repositorio.-->
+       <project path="proyectoUJI" name="ProyectoEI1027" /> <!--Repositorio alojado en Github_Carlos llamado ProyectoEI1027. Se descargará en una carpeta que llamará proyectoUJI porque así se lo indico-->
       <project path="calculator" name="calculadora" />
       <!--<project path="bionic" name="platform/bionic" groups="pdk" />
-      <project path="dalvik" name="platform_dalvik" remote="udinic"/>
-      <project path="frameworks/base" name="platform_frameworks_base" remote="udinic" revision="statusbar_fixes"/>
+      <project path="frameworks/base" name="platform_frameworks_base" remote="udinic" revision="statusbar_fixes"/> <!--En este caso se especifica que el remote será udinic y la rama statusbar_fixes-->
       <project path="tools/adt/eclipse" name="platform/tools/adt/eclipse" groups="notdefault,tools" />-->
     </manifest>

@@ -11,6 +11,6 @@
        <project path="proyectoUJI" name="ProyectoEI1027" /> <!--Repositorio alojado en Github_Carlos llamado ProyectoEI1027. Se descargará en una carpeta que llamará proyectoUJI porque así se lo indico-->
       <project path="calculator" name="calculadora" />
       <!--<project path="bionic" name="platform/bionic" groups="pdk" />
-      <project path="frameworks/base" name="platform_frameworks_base" remote="udinic" revision="statusbar_fixes"/> <!--En este caso se especifica que el remote será udinic y la rama statusbar_fixes-->
+      <project path="frameworks/base" name="platform_frameworks_base" remote="udinic" revision="statusbar_fixes"/> En este caso se especifica que el remote será udinic y la rama statusbar_fixes
       <project path="tools/adt/eclipse" name="platform/tools/adt/eclipse" groups="notdefault,tools" />-->
     </manifest>
